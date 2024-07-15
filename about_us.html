@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="stylesheets/bootstrap.min.css"/>
     <link rel="stylesheet" href="stylesheets/site.css"/>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,16 +9,29 @@
 </head>
 <body>
     <header>
-        <div id="banner">
-            <p>notification</p>
+        <div id="banner" class="bg-secondary text-white text-center">
+            <p>Random website notification</p>
         </div>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about_us.html">About Us</a>
-            <a href="contact_us.html">Contact Us</a>
-        </nav>
+        <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Animal Protection</a>
+              <button class="navbar-toggler" type="button" 
+              data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" 
+              aria-controls="navbarNavAltMarkup" aria-expanded="false" 
+              aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                  <a class="nav-link" href="about_us.html">About Us</a>
+                  <a class="nav-link" href="contact_us.html">Contact Us</a>
+                </div>
+              </div>
+            </div>
+          </nav>
     </header>
-    <main>
+    <main class="container">
         <h1>About Us</h1>
     <hr />
     <article>
@@ -32,24 +46,114 @@
     </article>
     <article>
         <h2>Daily Tasks</h2>
-        <ul>
-            <li>We Patrol Preservations</li>
-            <li>We Police Preservations</li>
-            <li>We Protect Preservations</li>
-            <li>We Rescue Preservations</li>
-        </ul>
+        <div class="row">
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">We Patrol</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet eius, tempora laudantium reiciendis ipsa modi aliquam omnis fuga ex libero dignissimos sequi maxime ullam quos ad soluta sunt nisi placeat?</p>
+                      <a href="contact_us.html" class="btn btn-primary">Check Out Patrols</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">We Police</h5>
+                      <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, esse quia ipsa perspiciatis totam recusandae rem laborum nemo maxime soluta doloremque. Commodi tempora quae molestiae. Ipsam sint rerum pariatur eligendi?</p>
+                      <a href="contact_us.html" class="btn btn-primary">Check Out Police</a>
+                    </div>
+                  </div>                
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">We Protect</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis illo dicta placeat nulla, nemo iusto libero voluptatum velit delectus blanditiis quidem! Officia deserunt quos, amet incidunt nobis a illum laboriosam.</p>
+                      <a href="contact_us.html" class="btn btn-primary">Check Out Protect</a>
+                    </div>
+                  </div>                
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">We Rescue</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta ducimus similique reiciendis at molestiae perferendis, dolor saepe excepturi consequuntur expedita optio dignissimos, facere aliquam totam dolorum suscipit!</p>
+                      <a href="contact_us.html" class="btn btn-primary">Go Rescue</a>
+                    </div>
+                  </div>                
+            </div>
+        </div>
     </article>
     <article>
         <h2>How you can join</h2>
-    <ul>
-        <li>Call our recruitment centre</li>
-        <li>Send your resume</li>
-        <li>Attend Interview</li>
-        <li>Complete Training</li>
-        <li>
-            <a href="contact_us.html">Contact Centre Office</a>
-        </li>
-    </ul>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Call our recruitment centre
+                </button>
+              </h3>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Send your resume
+                </button>
+              </h3>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Attend Interview
+                </button>
+              </h3>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Complete Training
+              </button>
+            </h3>
+            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>   
+        </div>
+        <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                Contact Centre Office
+              </button>
+            </h3>
+            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                <a href="contact_us.html" class="btn btn-outline-secondary">Contact Us</a>
+              </div>
+            </div>
+          </div>
+        </div>
     </article>
     </main>
     <footer>
@@ -58,6 +162,8 @@
         &nbsp
         <a href="https://www.ebay.com/">ebay</a>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/site.js"></script>
 </body>
 </html>

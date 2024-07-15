@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="stylesheets/bootstrap.min.css"/>
         <link rel="stylesheet" href="stylesheets/site.css"/>
         <title>Home Page</title>
     </head>
@@ -9,57 +10,122 @@
 
         <div id="header">
 
-            <div id="banner">
+            <div id="banner" class="bg-secondary text-white text-center">
                 <p>Random website notification</p>
             </div>
-
-            <div id="nav">
-                <a href="index.html">Home</a>
-                <a href="about_us.html">About Us</a>
-                <a href="contact_us.html">Contact Us</a> 
-            </div>
-
+            <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">Animal Protection</a>
+                  <button class="navbar-toggler" type="button" 
+                  data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" 
+                  aria-controls="navbarNavAltMarkup" aria-expanded="false" 
+                  aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                      <a class="nav-link" href="index.html">Home</a>
+                      <a class="nav-link" href="about_us.html">About Us</a>
+                      <a class="nav-link" href="contact_us.html">Contact Us</a>
+                    </div>
+                  </div>
+                </div>
+              </nav>
         </div> 
 
 
-        <div id="main">
+        <div id="main" class="container">
 
             <h1>Animal Preservation Centre - Americas</h1>
             <hr/>
-            <h2>Heading 2</h2>
-            <h3>Heading 3</h3>
-            <h4>Heading 4</h4>
-            <h5>Heading 5</h5>
-            <h6>Heading 6</h6>
-            <h2>Preservation Success Story </h2>
-            <iframe width="560" height="315" 
-            src="https://www.youtube.com/embed/CvAqzg7zDsA?si=51T4jHJErArqPsCW" 
-            title="Jamaican Rock Iguana - Sucess Story" frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, possimus voluptatibus! Ipsam nobis eius aperiam non quidem placeat, sed earum, facere harum quae nam ipsa aut quod vero, eum praesentium!</p>
-    
-            <h2>Cayman Brac - Rock Iguana</h2>
-            <video width="560" height="315" controls>
-                <source src="Videos/855081-hd_1920_1080_25fps.mp4" type="video/mp4">
-                <source src="Videos/855081-hd_1920_1080_25fps.mp4" type="video/ogg">
-                <source src="Videos/855081-hd_1920_1080_25fps.mp4" type="video/wmv">
-                Your browser does not support thr video
-            </video>
+             
+            <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" 
+                data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" 
+                data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" 
+                data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" 
+                data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" 
+                data-bs-slide-to="4" aria-label="Slide 5"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/cat-8575641_1280.jpg" class="d-block w-100" alt="cat">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/chicks-8782391_1280.jpg" class="d-block w-100" alt="chicks">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/gecko-8483282_1280.png" class="d-block w-100" alt="gecko">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/kingfisher-8705377_1280.jpg" class="d-block w-100" alt="Kingfisher">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/parrots-8735074_1280.jpg" class="d-block w-100" alt="parrots">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" 
+              data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" 
+              data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+           <br/>
+           <br/>
+           <div class="row">
+            <div class="col">
+              <h2>Preservation Success Story </h2>
+              <iframe width="560" height="315" 
+              src="https://www.youtube.com/embed/CvAqzg7zDsA?si=51T4jHJErArqPsCW" 
+              title="Jamaican Rock Iguana - Sucess Story" frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, possimus voluptatibus! Ipsam nobis eius aperiam non quidem placeat, sed earum, facere harum quae nam ipsa aut quod vero, eum praesentium!</p>  
+            </div>
+            <div class="col">
+              <h2>Cayman Brac - Rock Iguana</h2>
+              <video width="560" height="315" controls>
+                  <source src="Videos/855081-hd_1920_1080_25fps.mp4" type="video/mp4">
+                  <source src="Videos/855081-hd_1920_1080_25fps.mp4" type="video/ogg">
+                  <source src="Videos/855081-hd_1920_1080_25fps.mp4" type="video/wmv">
+                  Your browser does not support thr video
+              </video>
+            </div>
+           </div>   
             <br/>
-            <br/>
-            <br/>
-            <button id="jqueryBtn">Hide P tags - Jquery</button>
-            <button onclick="HidePTags()">Hide P tags - JS</button>
+            <div class="text-center">
+              <button id="jqueryBtn" class="btn btn-danger btn-lg">Hide P tags - Jquery</button>
+              <button class="btn btn-lg btn-outline-danger" onclick="HidePTags()">Hide P tags - JS</button>
+            </div>         
         </div>
-       
-        <div id="footer">
-            <br/><br/>
-            <a href="https://www.amazon.in">Amazon </a>
-            &nbsp
-            <a href="https://www.ebay.com/">ebay</a>
-        </div>
+       <footer class="py-3 mt-4 bg-secondary" data-bs-theme="dark">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link px-2 text-body-secondary">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="about_us.html" class="nav-link px-2 text-body-secondary">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact_us.html" class="nav-link px-2 text-body-secondary">Contact Us</a>
+          </li>
+        </ul>
+        <p class="text-center text-body-secondary">&copy;
+          <a href="google.com" target="_blank" class="nav-link">Google</a>
+        </p>
+       </footer>
         <script src="scripts/jquery.min.js"></script>
+        <script src="scripts/bootstrap.min.js"></script>
         <script src="scripts/site.js"></script>
     </body>
 </html>
